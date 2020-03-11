@@ -1,9 +1,7 @@
 import pytest
-import xlrd
+import requests
 
-
-
-
+s=requests.session()
 @pytest.mark.skip("功能没实现，或者已去除")
 @pytest.mark.parametrize("test_input, expected",
                          [["1+3", 1],
